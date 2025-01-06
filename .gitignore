@@ -30,3 +30,7 @@ coverage/
 .pnp.js
 .cache/
 .idea/
+
+# Ignoruj pliki lock
+package-lock.json
+yarn.lock
