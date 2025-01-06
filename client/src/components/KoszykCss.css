@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+.cart-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #2F2032;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: auto;
+    height: 80vh;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.cart-popup::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cart-popup::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cart-popup::-webkit-scrollbar-thumb {
+  background: #FFDA53;
+  border-radius: 50%; 
+  height: 20px; 
+}
+
+.cart-popup::-webkit-scrollbar-thumb:hover {
+  background: #FFDA53;
+}
+
+.cart-popup p {
+    margin: 10px 0;
+    color: #FFFFFF;
+    font-family: 'Vollkorn', serif;
+}
+
+.cart-popup button {
+    margin: 5px 0;
+    background-color: #FFDA53;
+    color: #2F2032;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.cart-popup form {
+    margin: 20px 0;
+}
+
+.cart-popup form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-family: 'Vollkorn', serif;
+}
+
+.cart-popup form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #FFDA53;
+  background-color: #FFFFFF;
+  color: #2F2032;
+  font-family: 'Vollkorn', serif;
+}
+
+.cart-popup button.close {
+  position: relative;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #FFDA53;
+  font-size: 20px;
+  cursor: pointer;
+}

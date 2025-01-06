@@ -1,0 +1,55 @@
+.orderFormContainer {
+    @apply w-full mx-auto mt-44 bg-dark-purple;
+}
+
+.orderFormTitle {
+    @apply m-0 mb-2.5 text-xl font-bold text-yellow;
+}
+
+.orderFormList {
+    @apply list-none p-0 mb-5;
+}
+
+.orderFormListItem {
+    @apply text-yellow mb-2;
+}
+
+.orderFormTotalCost {
+    @apply text-yellow text-xl mb-5;
+}
+
+.orderFormLabel {
+    @apply text-white mb-4 mx-4;
+}
+
+.orderFormInput {
+    @apply w-full mx-auto p-2 mb-4 border border-yellow bg-darker-purple text-yellow;
+}
+
+.orderFormButton {
+    @apply p-2 px-5 border-none bg-blue-500 text-white rounded cursor-pointer mt-2.5 transition-colors duration-300 ease-in-out;
+}
+
+.orderFormButton:hover {
+    @apply bg-blue-700;
+}
+
+.orderFormQuantityForm {
+    @apply justify-center items-center mt-2.5;
+}
+
+.orderFormQuantityFormInput {
+    @apply w-12 max-w-full p-1.25 border-none rounded text-center mr-2.5 transition-all duration-300 ease-in-out;
+}
+
+.orderFormQuantityFormInput:focus {
+    @apply border-2 border-blue-500 scale-110;
+}
+
+.orderFormQuantityFormButton {
+    @apply p-1.25 px-2.5 border-none bg-blue-500 text-white rounded cursor-pointer transition-colors duration-300 ease-in-out;
+}
+
+.orderFormQuantityFormButton:hover {
+    @apply bg-blue-700;
+}

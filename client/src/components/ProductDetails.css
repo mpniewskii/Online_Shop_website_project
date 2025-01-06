@@ -1,0 +1,119 @@
+body.popup-open .product-card {
+    transition: none;
+}
+
+.product-details-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    overflow: auto; 
+}
+
+.product-details-content {
+    background-color: #2F2032;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    color: #FFDA53;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Vollkorn', serif;
+    overflow: auto; 
+    max-height: 80vh; 
+}
+
+.product-details-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.product-details-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.product-details-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50%; 
+  height: 20px; 
+}
+
+.product-details-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.product-details-content button {
+    background-color: #FFDA53;
+    border: none;
+    color: #2F2032;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    float: right;
+}
+
+.product-details-content button:hover {
+    background-color: red; 
+}
+
+.product-details-content h2 {
+    color: #FFDA53;
+}
+
+.product-details-content p {
+    margin-bottom: 10px;
+}
+
+.product-details-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-details-content ul li {
+    margin-bottom: 5px;
+}
+
+.product-details-content .label {
+    font-weight: bold;
+}
+
+.product-details-content .reviews-section {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.product-details-content .no-reviews {
+    color: #888;
+}
+
+.product-details-content .review {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.product-details-content .review p {
+    margin: 0;
+}
+
+.product-details-content .review p:last-child {
+    margin-bottom: 5px;
+}
+
+.product-details-content .product-description {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.product-details-content .delivery-options-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}

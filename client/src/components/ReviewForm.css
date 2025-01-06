@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #2F2032;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.review-form textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #FFDA53;
+    background-color: #FFFFFF;
+    color: #2F2032;
+    font-family: 'Vollkorn', serif;
+}
+
+.review-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FFDA53;
+    color: #2F2032;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.review-form .star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.review-form .star-rating span {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 5px;
+    color: #FFDA53;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 5px;
+    color: #FFDA53;
+}
+
+.star-selected {
+    color: #FFDA53;
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+}

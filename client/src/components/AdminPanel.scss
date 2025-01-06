@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+$color-white: #FFFFFF;
+$color-yellow: #FFDA53;
+$color-dark-purple: #2F2032;
+$color-black-purple: #18071B;
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $color-white;
+    margin-top: 180px;
+
+}
+
+.admin-panel-product {
+    background-color: $color-black-purple;
+    padding: 20px;
+}
+
+.admin-panel-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 500px;
+    box-sizing: border-box;
+    background-color: $color-dark-purple;
+    border-radius: 10px;
+    color: $color-yellow;
+
+    label {
+        margin-bottom: 1em;
+        font-family: 'Vollkorn', serif;
+    }
+
+    input[type="text"] {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: $color-dark-purple;
+        background-color: $color-white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        margin: 20px 0;
+        padding: 10px;
+        width: 100%;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: $color-white;
+        background-color: $color-yellow;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($color-yellow, 10%);
+        }
+    }
+}
+
+.admin-panel-button {
+    padding: 0.5em 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $color-white;
+    background-color: $color-dark-purple;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: lighten($color-dark-purple, 10%);
+    }
+}
+.admin-panel-delete-button {
+    @extend .admin-panel-button;
+
+    &:hover {
+        background-color: red;
+    }
+}
+.admin-panel-review-section {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: $color-dark-purple;
+    border-radius: 10px;
+
+    .product {
+        margin-bottom: 2em;
+
+        h2 {
+            font-family: 'Vollkorn', serif;
+            color: $color-yellow;
+        }
+
+        .review {
+            margin-top: 1em;
+            padding: 1em;
+            background-color: lighten($color-dark-purple, 10%);
+            border-radius: 4px;
+
+            p {
+                font-family: 'Roboto Condensed', sans-serif;
+                color: $color-white;
+            }
+
+            .admin-panel-button {
+                margin-top: 1em;
+            }
+        }
+    }
+}

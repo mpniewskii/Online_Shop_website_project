@@ -1,0 +1,82 @@
+$primary-color: #3498db; 
+$hover-color: #2980b9;
+$header-bg-color: #2c3e50;
+$accent-color: #e74c3c;
+
+.App-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $header-bg-color;
+  min-height: 60px;
+  padding: 20px;
+  color: white;
+  z-index: 100000;
+
+  button {
+    background-color: $primary-color;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $hover-color;
+      transform: scale(1.05); 
+    }
+  }
+
+  select {
+    padding: 10px;
+    margin-right: 20px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black; 
+    font-size: 16px;
+    cursor: pointer;
+    appearance: none; 
+    position: relative;
+    text-align: center; 
+  
+    &::after {
+      content: "\25BC";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: black; 
+    }
+  
+    &:hover {
+      background-color: black; 
+      color: white; 
+  
+      &::after {
+        color: white; 
+      }
+    }
+  }
+
+  .admin-button {
+    background-color: $accent-color; 
+  }
+}
+
+button[data-sort] {
+  transition: transform 0.2s ease-in-out; 
+  &:hover {
+    transform: scale(1.1); 
+  }
+}

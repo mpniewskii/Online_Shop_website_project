@@ -1,0 +1,32 @@
+# Ignoruj folder node_modules w dowolnym miejscu w projekcie
+**/node_modules/
+
+# Ignoruj pliki .log w dowolnym miejscu w projekcie
+**/*.log
+
+# Ignoruj folder .vscode w dowolnym miejscu w projekcie
+**/.vscode/
+
+# Ignoruj pliki .env w dowolnym miejscu w projekcie
+**/*.env
+
+# Ignoruj folder dist w dowolnym miejscu w projekcie
+**/dist/
+
+# Ignoruj folder .cache w dowolnym miejscu w projekcie
+**/.cache/
+
+# Ignoruj folder .idea w dowolnym miejscu w projekcie
+**/.idea/
+
+# Ignoruj folder .DS_Store w dowolnym miejscu w projekcie (dla użytkowników macOS)
+**/.DS_Store
+
+# Coverage directory used by testing tools
+coverage/
+
+# Miscellaneous
+.pnp
+.pnp.js
+.cache/
+.idea/

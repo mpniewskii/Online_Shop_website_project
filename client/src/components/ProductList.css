@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+body.popup-open .product-card:hover {
+  transform: none;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #18071B;
+  color: #FFFFFF;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 180px;
+  background-color: #2F2032;
+}
+
+.product-card {
+  font-family: 'Vollkorn', serif;
+  background-color: #FFDA53;
+  color: #2F2032;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: calc((100% / 3) - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card > h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.product-card > p.product-description {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.product-card > p.product-price,
+.product-card > p.product-stock {
+  font-size: 0.8em;
+}
+
+.product-card > img.product-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.product-card > button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product-card > button:hover {
+  background-color: #0056b3;
+}
+
+.product-card > form.quantity-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.product-card > form.quantity-form > input {
+  width: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-card > form.quantity-form > input:focus {
+  border: 2px solid #007BFF;
+  transform: scale(1.1);
+}
+
+.product-card > form.quantity-form > button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product-card > form.quantity-form > button:hover {
+  background-color: #0056b3;
+}
